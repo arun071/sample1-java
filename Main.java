@@ -2,16 +2,21 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String[] args) {
+public static void main(String[]args)
+    {
+        System.out.println("enter the average mark");
         Scanner arun=new Scanner(System.in);
-        System.out.println("Enter the years ");
-        int num= arun.nextInt();
-        if(num%4==0||(num%100==0&&num%400==0))
+        int avg= arun.nextInt();
+        if(avg>90&&avg<=100)
         {
-            System.out.println("the given year is leap year");
+            System.out.println("your grade is A");
+        }
+        else if(avg>60&&avg<=89)
+        {
+            System.out.println("your grade is b");
         }
         else {
-            System.out.println("the given year is not a leap year");
-
-
-        }}}
+            System.out.println("your grade is c");
+        }
+    }
+}
